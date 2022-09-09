@@ -35,3 +35,40 @@ function generateFile(data) {
     const filePath = path.join(process.cwd(), 'Generated-README.md');
     fs.writeFileSync(filePath, convertToMarkDown(data))
 }
+
+function convertToMarkDown(data) {
+    return `# Project
+
+    ${data.project}
+
+    ## Description:
+    ${data.description}
+
+    ## Table of Context:
+    
+    -[Installation](#installation)
+    -[Contributers](#contributers)
+    -[Licenses](#lincenses)
+    
+    ## Installation:
+    ${data.install}
+
+    ## Contributers:
+    ${data.contributers}
+
+    ## Licenses:
+    ${data.license}
+
+    ## Badge:
+    ![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
+
+    ## Tests:
+    ${data.test}
+
+    ## Email:
+    ${data.email}
+
+    ## Github:
+    ${data.github}
+     `
+}
