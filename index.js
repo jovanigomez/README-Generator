@@ -21,7 +21,17 @@ function init() {}
      {type: 'input', name: 'test', message: 'which command do you use to run it?'},
      {type: 'input', name: 'contributers', message: 'how should users contribute?'}
  ])
+ 
+ .then((answers)=> {
+     console.log(answers)
+     generateFile(answers)
+ })
 
+ 
  // Function call to initialize app
 init();
 
+function generateFile(data) {
+    const filePath = path.join(process.cwd(), 'Generated-README.md');
+    fs.writeFileSync(filePath, convertToMarkDown(data))
+}
