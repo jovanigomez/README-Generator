@@ -9,7 +9,7 @@ const questions = [];
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
  inquirer
  .prompt([
      {type: 'list', name: 'license', message: 'choose your license', choices: ['GPL 3.0', 'GNU', 'MIT', 'APACHE 2.0']},
@@ -70,5 +70,5 @@ function convertToMarkDown(data) {
 
     ## Github:
     ${data.github}
-     `
+    `
 }
