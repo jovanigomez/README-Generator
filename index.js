@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
-import inquirer from "inquirer";
-import * as fs from "fs";
-import path from "path";
+const inquirer  = require("inquirer");
+const fs = require("fs");
+const path = require("path");
 // TODO: Create an array of questions for user input
 const questions = [];
 
@@ -27,7 +27,7 @@ function init() {
      generateFile(answers)
  })
 
- 
+};
  // Function call to initialize app
 init();
 

@@ -1,17 +1,22 @@
 {
-    "name": "README-GENERATOR",
-    "version": "1.0.0",
-    "description": "HELLO",
-    "main": "index.js",
-    "type": "module",
-    "start": "node index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "Jovani",
-    "license": "ISC",
-    "dependencies": {
-      "inquirer": "^6.3.1"
-    }
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jovanigomez/README-Generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jovanigomez/README-Generator/issues"
+  },
+  "homepage": "https://github.com/jovanigomez/README-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
   }
-  
+}
